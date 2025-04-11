@@ -25,7 +25,8 @@ public class Exercises {
     2. method that takes in a String and returns
     true if the String contains any Java Keywords.
      */
-    public static boolean containsKeyWord( String word){
+    public static boolean containsKeyWord( String phrase){
+        boolean match=false;
         String[] keyWords=
         {
             "abstract", "assert", "boolean", "break", "byte", "case", "catch", "char", "class", "const",
@@ -36,10 +37,14 @@ public class Exercises {
                     "synchronized", "this", "throw", "throws", "to", "transient", "transitive", "try", "uses", "var",
                     "void", "volatile", "while", "with", "yield"
         };
+        String[] wordsInPhrase= phrase.split(" ");
         //System.out.println(keyWords.length);
-        return Arrays.asList(keyWords).contains(word);
 
-
-
+        for (String word: wordsInPhrase) {
+            if (Arrays.asList(keyWords).contains(word)) {
+                match = true;
+            }
+        }
+        return match;
     }
 }

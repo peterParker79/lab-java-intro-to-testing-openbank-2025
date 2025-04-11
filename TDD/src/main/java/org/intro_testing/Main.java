@@ -7,7 +7,7 @@ package org.intro_testing;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-    Exercises.containsKeyWord("while");
+        System.out.println(Exercises.containsKeyWord("Find this word: while"));
     }
 
 }
