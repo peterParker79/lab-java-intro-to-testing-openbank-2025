@@ -1,11 +1,10 @@
 package org.intro_testing;
 
 public abstract class Player {
-    private int health;
-    private int strength;
-    private int lives;
-
-    private final int  initialHealth;
+    protected int health;
+    protected int strength;
+    protected int lives;
+    protected final int  initialHealth;
 
     public Player(int health, int strength, int lives) {
         setHealth(health);
