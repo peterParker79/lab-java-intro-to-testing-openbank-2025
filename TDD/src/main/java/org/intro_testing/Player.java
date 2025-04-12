@@ -50,7 +50,7 @@ public abstract class Player {
     }
 
     public void attack (Player playerToAttack){
-        playerToAttack.setHealth(this.strength-playerToAttack.getHealth());
+        playerToAttack.setHealth(playerToAttack.getHealth()-this.strength);
     }
 
     public void checkHealth() {
